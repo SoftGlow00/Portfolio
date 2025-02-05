@@ -17,6 +17,15 @@ html {
 .purple {
   color: var(--imp-text-color) !important;
 }
+.dec_class {
+  font-size: 1.2em !important;
+  color: #be6adf !important;
+  font-weight: 600 !important;
+}
+.dec_cursor_class {
+  font-size: 1.2rem !important;
+  color: #b562d6 !important;
+}
 
 button:focus {
   box-shadow: none !important;
@@ -356,8 +365,8 @@ button:focus {
   width: 40px !important;
   height: 40px !important;
   text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
+  font-size: 2rem !important;
+  line-height: 1.1em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
@@ -740,4 +749,10 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+.img-fluid.my-photo {
+  border-radius: 110px;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #801f95;
+  transition: 0.5s !important;
 }

@@ -1,13 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillSkype,
+  AiFillSlackCircle,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Type from "./Type_dec";
 
 function Home2() {
   return (
@@ -19,15 +21,27 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I am a Full Stack Developer and DevOps Engineer dedicated to creating seamless, efficient, and scalable digital solutions.… <span className="wave" role="img" aria-labelledby="wave">🤷‍♂️</span>
               <br />
-              <br />I am fluent in classics like
+              <br />My expertise spans
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> front-end </b>
+              </i>and
+              <i>
+                <b className="purple"> back-end </b>
               </i>
+              development, coupled with hands-on experience in 
+              <i>
+                <b className="purple"> managing infrastructure  </b>
+              </i>
+              and 
+              <i>
+                <b className="purple"> cloud services </b>
+              </i>.{'\n'}
+              I thrive on solving complex challenges and optimizing systems for performance and reliability.
               <br />
               <br />
+              With a strong focus on collaboration, I enjoy building innovative products that make a real impact.
               My field of Interest's are building new &nbsp;
               <i>
                 <b className="purple">Web Technologies and Products </b> and
@@ -38,23 +52,20 @@ function Home2() {
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I aim to continuously grow as a Full Stack Developer and DevOps Engineer, mastering emerging technologies and industry best practices. 
+              <br />
+              My vision is to build innovative, scalable solutions that solve real-world problems and enhance user experiences. 
+              <br />
+              I aspire to contribute to projects that drive positive change, embracing challenges as opportunities for growth. 
+              <br />
+              <div style={{ textAlign: 'center', height: '3rem'}}>
+                <Type />
+              </div>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src='/Assets/avatar.svg' className="img-fluid my-photo" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -67,17 +78,36 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/BlockDev0105"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
+              </li><li className="social-icons">
+                <a
+                  href="https://join.skype.com/uoocsGPmVmvy"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillSkype />
+                </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://bestfriends-mvq1406.slack.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillSlackCircle />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://x.com/SakuraHaru21037"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +117,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +127,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/harunosakura000101"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
