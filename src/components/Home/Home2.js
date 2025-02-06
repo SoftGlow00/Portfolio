@@ -78,7 +78,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/BlockDev0105"
+                  href="https://github.com/SoftGlow00"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

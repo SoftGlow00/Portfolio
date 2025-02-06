@@ -21,8 +21,9 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={"/BlockDev_resume.pdf"}
+            href={"/resume.pdf"}
             target="_blank"
+            download
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
@@ -31,13 +32,13 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={"/BlockDev_resume.pdf"} className="d-flex justify-content-center">
+          <Document file={"/resume.pdf"} className="d-flex justify-content-center">
             <Page loading={<Particle />} pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
-          <Document loading={<Particle />} file={"/BlockDev_resume.pdf"} className="d-flex justify-content-center mt-1">
+          <Document loading={<Particle />} file={"/resume.pdf"} className="d-flex justify-content-center mt-1">
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
-          <Document loading={<Particle />} file={"/BlockDev_resume.pdf"} className="d-flex justify-content-center mt-1">
+          <Document loading={<Particle />} file={"/resume.pdf"} className="d-flex justify-content-center mt-1">
             <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
@@ -45,8 +46,9 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={"/BlockDev_resume.pdf"}
+            href={"/resume.pdf"}
             target="_blank"
+            download
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />

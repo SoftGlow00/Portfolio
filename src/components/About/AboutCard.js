@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">BlockDev Behera </span>
+            Hi Everyone, I am <span className="purple">SoftGlow Behera </span>
             from <span className="purple"> Bhubaneswar, India.</span>
             <br />
             I am currently working as a full-stack developer and DevOps, specializing in creating seamless web and mobile applications in Red Oak, Texas.
