@@ -17,6 +17,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -45,6 +46,7 @@ function App() {
         <Footer />
       </div>
       <SpeedInsights/>
+      <Analytics />
     </Router>
   );
 }
