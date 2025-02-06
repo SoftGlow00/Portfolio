@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -33,13 +33,13 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={"/resume.pdf"} className="d-flex justify-content-center">
-            <Page loading={<Particle />} pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={width > 786 ? 1.8 : 0.9} renderTextLayer={false} />
           </Document>
-          <Document loading={<Particle />} file={"/resume.pdf"} className="d-flex justify-content-center mt-1">
-            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+          <Document file={"/resume.pdf"} className="d-flex justify-content-center mt-1">
+          <Page pageNumber={2} scale={width > 786 ? 1.8 : 0.9} renderTextLayer={false} />
           </Document>
-          <Document loading={<Particle />} file={"/resume.pdf"} className="d-flex justify-content-center mt-1">
-            <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
+          <Document file={"/resume.pdf"} className="d-flex justify-content-center mt-1">
+          <Page pageNumber={3} scale={width > 786 ? 1.8 : 0.9} renderTextLayer={false} />
           </Document>
         </Row>
 
